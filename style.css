@@ -699,10 +699,40 @@ footer {
 @media screen and (min-width: 1366px) {
   header#nav-section {
     display: block;
-    margin-bottom: 120px;
+    margin-bottom: 10px;
 
     .three-pictures {
       display: flex;
+      justify-content: space-between;
+      margin: 0 50px;
+
+      .macbook {
+        position: absolute;
+        left: 50%;
+        margin-left: -299px;
+        top: 0;
+        z-index: -1;
+      }
+    }
+
+    .navbar .logo {
+      width: 150px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .map-container {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: -440px;
+        left: 50%;
+        margin-left: -491px;
+        z-index: -2;
+        scale: 1.2;
+      }
     }
   }
   .navbar,
@@ -813,5 +843,61 @@ footer {
     color: #fff;
     border-radius: 4px;
     font-size: 10px;
+  }
+
+  .top-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    div.img {
+      width: 208px;
+
+      img {
+        /* width: 100%; */
+      }
+
+      .left-POS {
+        height: 397px;
+        width: 200px;
+      }
+    }
+
+    .hero-text {
+      h1,
+      span {
+        font-size: 35pt;
+      }
+      p {
+        font-size: 20pt;
+      }
+      h2 {
+        font-size: 40pt;
+      }
+    }
+  }
+  .hero-text {
+    /* margin: 0 200px; */
+    font-size: 20pt;
+  }
+
+  header {
+    .top-container {
+      div.img {
+        width: 200px;
+      }
+    }
+  }
+
+  .hero-text {
+    font-size: 20pt;
+    padding-bottom: 70px;
+  }
+
+  .hero-text {
+    .h1 {
+      span img {
+        width: 50px;
+      }
+    }
   }
 }
