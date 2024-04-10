@@ -977,11 +977,25 @@ footer {
     }
   }
   footer {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin: 0 200px;
     position: relative;
     /* z-index: 999; */
 
+    h2 {
+      font-size: 40pt;
+      padding-top: 50px;
+    }
+    p {
+    }
+
+    ul li div p {
+      font-size: 12pt !important;
+    }
+
     ul li label {
-      font-size: 60pt;
+      font-size: 16pt !important;
     }
     padding: 0 100px;
   }
