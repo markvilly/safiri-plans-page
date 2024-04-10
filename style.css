@@ -791,7 +791,7 @@ footer {
     padding: 15px 100px;
     justify-content: space-between;
     align-items: center;
-    /* gap: 5px; */
+
     color: var(--white);
     font-size: 0.7rem;
     border-bottom-right-radius: 10px;
