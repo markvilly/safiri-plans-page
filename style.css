@@ -214,6 +214,10 @@ div.img:last-child {
   }
 }
 
+figure.card:last-child {
+  display: none;
+}
+
 .hero-container {
   padding: 0 20px;
   text-align: center;
@@ -253,7 +257,7 @@ div.img:last-child {
 
 .hero-container {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 95px;
   margin-bottom: 30px;
 }
 
@@ -266,13 +270,15 @@ div.img:last-child {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  gap: 5px;
+  gap: 15px;
   color: var(--dark-blue);
+  overflow-x: auto;
 
   .card {
     padding: 10px;
     background-color: var(--off-white2);
     flex-basis: 49%;
+
     border-radius: 4px;
 
     img {
@@ -429,9 +435,6 @@ div.img:last-child {
 }
 
 /* DROP DOWN STYLING */
-
-.tausi-card .drop-down {
-}
 
 .drop-down {
   font-size: 7pt;
@@ -747,7 +750,7 @@ footer {
   .navbar {
     background-color: var(--dark-blue);
     margin: 0 50px;
-    padding: 15px 15px;
+    padding: 15px 100px;
     justify-content: space-between;
     align-items: center;
     /* gap: 5px; */
@@ -813,9 +816,23 @@ footer {
     }
   }
   .cards {
+    margin: 0 100px;
     gap: 1px;
-    figure {
-      flex-basis: 30%;
+    .card {
+      flex-basis: 40%;
+      /* height: 200px; */
+
+      figcaption {
+        h3 {
+          font-size: 20pt !important;
+          padding-top: 20px !important;
+          padding-bottom: 5px;
+        }
+
+        p {
+          font-size: 14pt !important;
+        }
+      }
     }
     figure:nth-child(3) {
       flex-grow: 0;
@@ -852,10 +869,6 @@ footer {
     div.img {
       width: 208px;
 
-      img {
-        /* width: 100%; */
-      }
-
       .left-POS {
         height: 397px;
         width: 200px;
@@ -863,6 +876,7 @@ footer {
     }
 
     .hero-text {
+      /* font-size: 20pt; */
       h1,
       span {
         font-size: 35pt;
@@ -898,6 +912,53 @@ footer {
       span img {
         width: 50px;
       }
+    }
+  }
+
+  #hero-text-para {
+    font-size: 17pt;
+    margin: 0 300px;
+  }
+
+  .hero-container {
+    padding-bottom: 227px;
+  }
+  .btn {
+    font-size: 15pt;
+    font-weight: normal;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .card-img {
+    height: 122px !important;
+  }
+
+  footer {
+    ul li label {
+      font-size: 60pt;
+    }
+    padding: 0 100px;
+  }
+  .navbar {
+    ul {
+      gap: 8px;
+      font-size: 12pt;
+    }
+  }
+
+  header .btn {
+    font-size: 12pt !important;
+  }
+
+  figure.card:last-child {
+    display: block;
+  }
+
+  .cards {
+    .card {
+      /* flex-basis: 40%; */
+
+      padding: 10px 34px !important;
     }
   }
 }
