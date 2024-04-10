@@ -165,6 +165,23 @@ header#nav-section {
   display: none;
 }
 
+.map-text-wrapper {
+  width: 94vw;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    left: -40px;
+    top: 100px;
+    margin-top: -200px;
+
+    z-index: 0;
+  }
+}
+
 .top-container {
   display: flex;
   justify-content: space-between;
@@ -273,6 +290,7 @@ figure.card:last-child {
   gap: 15px;
   color: var(--dark-blue);
   overflow-x: auto;
+  z-index: 999;
 
   .card {
     padding: 10px;
@@ -445,7 +463,7 @@ figure.card:last-child {
   max-height: 0;
   overflow: hidden;
 
-  transition: max-height 0.4s ease, padding 0.3s ease-in-out;
+  /* transition: max-height 0.4s ease, padding 0.3s ease-in-out; */
 
   li:first-child {
     padding-bottom: 5px;
@@ -475,7 +493,7 @@ figure.card:last-child {
   }
 }
 
-.tausi-card .drop-down:hover,
+.tausi-card,
 .active {
   max-height: 400px;
   padding-bottom: 45px;
@@ -530,7 +548,9 @@ input[type="radio"] {
 }
 
 footer {
+  position: relative;
   padding-top: 70px;
+  z-index: auto;
   h2 {
     color: var(--slight-dark);
     line-height: 1.5;
@@ -584,7 +604,15 @@ footer {
       font-weight: 550;
     }
   }
+  .map-text-wrapper {
+    img {
+      left: -70px;
+      top: 50px;
+      margin-top: -300px;
 
+      z-index: 0;
+    }
+  }
   .hero-container .cards {
     gap: 10px;
     .card {
@@ -608,7 +636,7 @@ footer {
   }
   .plan-cards {
     .plan-card {
-      padding-top: 80px;
+      padding-top: 90px;
     }
   }
   .tausi-card {
@@ -643,7 +671,17 @@ footer {
       }
     }
   }
-
+  #tausiCard {
+    padding-top: 100px;
+    min-height: 200px;
+    padding-bottom: 20px;
+    figure {
+      .image-wrapper {
+        top: -75px;
+        margin-left: -75px;
+      }
+    }
+  }
   #plans-section {
     .plan-heading {
       color: var(--white);
@@ -932,8 +970,16 @@ footer {
   .card-img {
     height: 122px !important;
   }
-
+  .map-text-wrapper {
+    img {
+      margin-top: -550px;
+      left: -100px;
+    }
+  }
   footer {
+    position: relative;
+    /* z-index: 999; */
+
     ul li label {
       font-size: 60pt;
     }
@@ -960,5 +1006,11 @@ footer {
 
       padding: 10px 34px !important;
     }
+  }
+  .navbar .nav-items {
+    gap: 20px;
+  }
+  li.nav-item img {
+    width: 35px;
   }
 }
